@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Idus de Marzo · Cuestionario</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="d-none">
+      <h1>Cuestionario de los Idus de Marzo</h1>
+    </header>
+
+    <article id="get-ready" class="">
+      <header class="d-none">
+        <h2>¡Preparados!</h2>
+      </header>
+
+      <section>
+        <p id="team-turn-text">Turno del equipo</p>
+        <p id="team-name">Nombre del equipo</p>
+        <button
+          id="team-ready-btn"
+          class="btn btn-primary"
+          onclick="teamReady()"
+        >
+          ¡Preparados!
+        </button>
+      </section>
+    </article>
+
+    <article id="quiz">
+      <header class="d-none">
+        <h2>Pregunta:</h2>
+      </header>
+
+      <section id="category">
+        <p>Aquí va la categoría de la pregunta</p>
+      </section>
+
+      <section id="question">
+        <p>¿Aquí va una pregunta?</p>
+      </section>
+
+      <section id="answers">
+        <button id="option-a" class="btn btn-primary" onclick="answer(this)">
+          Opción A
+        </button>
+        <button id="option-b" class="btn btn-secondary" onclick="answer(this)">
+          Opción B
+        </button>
+        <button id="option-c" class="btn btn-success" onclick="answer(this)">
+          Opción C
+        </button>
+        <button id="option-d" class="btn btn-danger" onclick="answer(this)">
+          Opción D
+        </button>
+      </section>
+    </article>
+
+    <article id="check-answer" class="d-none">
+      <header class="d-none">
+        <h2>La respuesta es:</h2>
+      </header>
+
+      <section>
+        <p id="answer-correctness"><span>Incorrecto</span>!</p>
+        <p>
+          La respuesta correcta es: <span id="correct-answer">respuesta</span>
+        </p>
+        <button id="pass-turn-btn" class="btn btn-primary" onclick="passTurn()">
+          Pasa el Turno
+        </button>
+      </section>
+    </article>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
