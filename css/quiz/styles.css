@@ -29,7 +29,9 @@ article {
   transition:
     opacity 0.4s ease,
     transform 0.4s ease;
+
   display: none;
+  pointer-events: none;
 }
 
 article.active {
@@ -38,6 +40,8 @@ article.active {
   transform: scale(1);
   justify-content: center;
   align-items: center;
+
+  pointer-events: auto;
 }
 
 .quiz {
@@ -119,7 +123,30 @@ article.active {
   filter: brightness(0.95);
 }
 
-.get-ready,
+.get-ready {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)),
+    url("/images/pexels-chaitaastic-1797161.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  z-index: 999;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
 .check-answer {
   position: fixed;
   top: 0;
