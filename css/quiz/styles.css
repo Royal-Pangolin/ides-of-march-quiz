@@ -12,14 +12,18 @@ body {
   box-sizing: border-box;
 }
 
-#quiz {
+.progress-container {
+  height: 0vh;
+}
+
+.quiz {
   display: flex;
   flex-direction: column;
   width: 100vw;
   height: 100vh;
 }
 
-#category {
+.category {
   width: 100vw;
   min-height: 10vh;
   max-height: 10vh;
@@ -31,7 +35,7 @@ body {
   text-align: center;
 }
 
-#question {
+.question {
   width: 100vw;
   min-height: 50vh;
   max-height: 50vh;
@@ -43,7 +47,7 @@ body {
   text-align: center;
 }
 
-#answers {
+.answers {
   width: 100vw;
   min-height: 40vh;
   max-height: 40vh;
@@ -55,13 +59,13 @@ body {
   box-sizing: border-box;
 }
 
-#answers button {
+.answers button {
   width: 100%;
   height: 100%;
   font-size: 1.1rem;
 }
 
-#get-ready {
+.get-ready {
   position: fixed;
   top: 0;
   left: 0;
@@ -77,20 +81,20 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
-#team-turn-text {
+.team-turn-text {
   font-size: 1.5rem;
 }
 
-#team-name {
+.team-name {
   font-size: 2rem;
   font-weight: bold;
 }
 
-#team-ready-btn {
+.team-ready-btn {
   font-size: 1.2rem;
 }
 
-#check-answer {
+.check-answer {
   position: fixed;
   top: 0;
   left: 0;
@@ -106,15 +110,15 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
-#answer-correctness {
+.answer-correctness {
   font-size: 1.5rem;
 }
 
-#correct-answer {
+.correct-answer {
   font-size: 2rem;
   font-weight: bold;
 }
 
-#pass-turn-btn {
+.pass-turn-btn {
   font-size: 1.2rem;
 }

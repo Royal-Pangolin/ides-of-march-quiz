@@ -1,0 +1,65 @@
+{
+  "categories": [{ "id": "test", "displayText": "Categoría de prueba" }],
+  "questions": [
+    {
+      "categoryId": "test",
+      "question": "¿Cuál es el animal terrestre más rápido?",
+      "correctAnswer": "Guepardo",
+      "wrongAnswers": ["León", "Antílope", "Caballo"]
+    },
+    {
+      "categoryId": "test",
+      "question": "¿Qué continente tiene más países?",
+      "correctAnswer": "África",
+      "wrongAnswers": ["Asia", "Europa", "América"]
+    },
+    {
+      "categoryId": "test",
+      "question": "¿Quién fue el primer hombre en la Luna?",
+      "correctAnswer": "Neil Armstrong",
+      "wrongAnswers": ["Buzz Aldrin", "Yuri Gagarin", "Michael Collins"]
+    },
+    {
+      "categoryId": "test",
+      "question": "¿Cuál es la capital de Japón?",
+      "correctAnswer": "Tokio",
+      "wrongAnswers": ["Osaka", "Kioto", "Hiroshima"]
+    },
+    {
+      "categoryId": "test",
+      "question": "¿Qué metal se usa para hacer monedas de 1 y 2 euros?",
+      "correctAnswer": "Níquel",
+      "wrongAnswers": ["Plomo", "Cobre", "Aluminio"]
+    },
+    {
+      "categoryId": "test",
+      "question": "¿Cuál es la montaña más alta del mundo?",
+      "correctAnswer": "Monte Everest",
+      "wrongAnswers": ["K2", "Kangchenjunga", "Lhotse"]
+    },
+    {
+      "categoryId": "test",
+      "question": "¿Qué órgano del cuerpo produce insulina?",
+      "correctAnswer": "Páncreas",
+      "wrongAnswers": ["Hígado", "Riñón", "Corazón"]
+    },
+    {
+      "categoryId": "test",
+      "question": "¿Cuál es la moneda oficial de Estados Unidos?",
+      "correctAnswer": "Dólar",
+      "wrongAnswers": ["Euro", "Libra", "Yen"]
+    },
+    {
+      "categoryId": "test",
+      "question": "¿Qué planeta es conocido como el planeta rojo?",
+      "correctAnswer": "Marte",
+      "wrongAnswers": ["Júpiter", "Venus", "Saturno"]
+    },
+    {
+      "categoryId": "test",
+      "question": "¿En qué país se encuentran las pirámides de Giza?",
+      "correctAnswer": "Egipto",
+      "wrongAnswers": ["México", "Sudán", "Perú"]
+    }
+  ]
+}
