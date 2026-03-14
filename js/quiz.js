@@ -1,5 +1,5 @@
 async function initGame() {
-  const questionsResponse = await fetch("./data/questions.json");
+  const questionsResponse = await fetch("/data/questions.json");
   const questionsData = await questionsResponse.json();
 
   console.log(
@@ -8,7 +8,7 @@ async function initGame() {
     questionsData.questions,
   );
 
-  const teamsResponse = await fetch("./data/teams.json");
+  const teamsResponse = await fetch("/data/teams.json");
   const teamsData = await teamsResponse.json();
 
   console.log(

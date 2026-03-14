@@ -6,10 +6,12 @@
   --btn-text-color: #ffffff;
   --btn-border-radius: 16px;
   --btn-font-size: 1.3rem;
-  --card-bg: #ffffff;
+  --card-bg: rgba(255, 255, 255, 0.95);
   --card-radius: 20px;
   --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   --team-color: #4e79a7;
+  --background-color: #f0f2f5;
+  --text-color: #333333;
 }
 
 html,
@@ -19,7 +21,7 @@ body {
   width: 100vw;
   height: 100vh;
   font-family: "Segoe UI", Roboto, sans-serif;
-  background-color: #f0f2f5;
+  background-color: var(--background-color);
   box-sizing: border-box;
 }
 
@@ -29,7 +31,6 @@ article {
   transition:
     opacity 0.4s ease,
     transform 0.4s ease;
-
   display: none;
   pointer-events: none;
 }
@@ -40,7 +41,6 @@ article.active {
   transform: scale(1);
   justify-content: center;
   align-items: center;
-
   pointer-events: auto;
 }
 
@@ -73,6 +73,23 @@ article.active {
   background-color: #e9ecef;
   font-size: 2.6rem;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.question::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/images/pexels-chaitaastic-1797161.jpg") center/cover
+    no-repeat;
+  opacity: 0.08;
+  z-index: 0;
+}
+
+.question p {
+  position: relative;
+  z-index: 1;
 }
 
 .answers {
@@ -98,6 +115,7 @@ article.active {
     transform 0.1s,
     filter 0.2s;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 #option-a {
@@ -115,48 +133,34 @@ article.active {
 
 .answers button:hover {
   filter: brightness(1.1);
-  cursor: pointer;
 }
-
 .answers button:active {
   transform: scale(0.97);
   filter: brightness(0.95);
 }
 
-.get-ready {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background:
-    linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)),
-    url("/images/pexels-chaitaastic-1797161.jpg");
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  z-index: 999;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
+.get-ready,
 .check-answer {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 999;
   padding: 20px;
   box-sizing: border-box;
+}
+
+.get-ready {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)),
+    url("/images/pexels-chaitaastic-1797161.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .get-ready > section,
@@ -214,9 +218,7 @@ article.active {
 .team-ready-btn:hover,
 .pass-turn-btn:hover {
   filter: brightness(1.1);
-  cursor: pointer;
 }
-
 .team-ready-btn:active,
 .pass-turn-btn:active {
   transform: scale(0.97);
@@ -232,7 +234,6 @@ article.active {
 .answer-correct {
   color: #28a745;
 }
-
 .answer-wrong {
   color: #dc3545;
 }
@@ -240,8 +241,81 @@ article.active {
 .check-answer p {
   font-size: 1.4rem;
 }
-
 .check-answer .correct-answer {
   font-weight: 700;
   color: inherit;
+}
+
+.results-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+#results {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 400px;
+}
+
+.result-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 30px; /* a bit more horizontal padding */
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+  font-size: 1.5rem;
+}
+
+.result-card span {
+  display: inline-block;
+}
+
+.position {
+  font-weight: bold;
+  width: 40px;
+  text-align: center;
+}
+
+.team {
+  flex: 1;
+  text-align: left;
+  margin-right: 20px;
+  font-weight: 600;
+}
+
+.score {
+  font-weight: bold;
+  text-align: right;
+  width: 60px;
+}
+
+#restart-btn {
+  font-size: 1.4rem;
+  padding: 10px 30px;
+  border-radius: 12px;
+  border: none;
+  background: var(--btn-gradient-1);
+  color: white;
+  cursor: pointer;
+}
+
+/* FONDO TENUE RESULTADOS */
+body.results::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("/images/pexels-chaitaastic-1797161.jpg") center/cover
+    no-repeat;
+  opacity: 0.07;
+  filter: blur(2px);
+  z-index: -1;
 }
