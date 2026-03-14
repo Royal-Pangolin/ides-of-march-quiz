@@ -5,6 +5,8 @@ const States = {
     },
 
     teamReady(sm) {
+      new Audio("/audio/click_003.ogg").play();
+
       if (!sm.engine.hasQuestions()) {
         sm.set(States.GAME_OVER);
         return;
@@ -28,6 +30,11 @@ const States = {
     answer(sm, answer) {
       const correct = sm.engine.submitAnswer(answer);
       sm.correct = correct;
+      if (sm.correct) {
+        new Audio("/audio/confirmation_002.ogg").play();
+      } else {
+        new Audio("/audio/error_003.ogg").play();
+      }
 
       sm.set(States.CHECK_ANSWER);
     },
@@ -41,6 +48,7 @@ const States = {
     },
 
     passTurn(sm) {
+      new Audio("/audio/click_003.ogg").play();
       sm.engine.nextTeam();
 
       if (!sm.engine.hasQuestions()) {
