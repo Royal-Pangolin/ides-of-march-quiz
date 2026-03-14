@@ -1,27 +1,20 @@
 class GameController {
-  constructor(engine, stateMachine) {
+  constructor(engine, sm) {
     this.engine = engine;
-    this.sm = stateMachine;
-
+    this.sm = sm;
     this.bindEvents();
   }
 
   bindEvents() {
-    document
-      .getElementById("team-ready-btn")
-      .addEventListener("click",
-        () => this.sm.dispatch("teamReady"));
+    document.getElementById("team-ready-btn")
+      .addEventListener("click", () => this.sm.dispatch("teamReady"));
 
-    document
-      .querySelectorAll("#answers button")
+    document.querySelectorAll("#answers button")
       .forEach(btn => {
-        btn.addEventListener("click",
-          () => this.sm.dispatch("answer", btn.textContent));
+        btn.addEventListener("click", () => this.sm.dispatch("answer", btn.textContent));
       });
 
-    document
-      .getElementById("pass-turn-btn")
-      .addEventListener("click",
-        () => this.sm.dispatch("passTurn"));
+    document.getElementById("pass-turn-btn")
+      .addEventListener("click", () => this.sm.dispatch("passTurn"));
   }
 }
