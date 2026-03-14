@@ -6,6 +6,7 @@
   --btn-text-color: #ffffff;
   --btn-border-radius: 16px;
   --btn-font-size: 1.3rem;
+  --btn-aswers-font-size: 2.2rem;
   --card-bg: rgba(255, 255, 255, 0.95);
   --card-radius: 20px;
   --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -107,7 +108,7 @@ article.active {
 .answers button {
   width: 100%;
   height: 100%;
-  font-size: var(--btn-font-size);
+  font-size: var(--btn-aswers-font-size);
   border-radius: var(--btn-border-radius);
   color: var(--btn-text-color);
   border: none;
