@@ -1,6 +1,13 @@
 :root {
   --team-primary: #f8f9fa;
   --team-secondary: #c9c9c9;
+  --btn-color-1: #4e79a7;
+  --btn-color-2: #f28e2b;
+  --btn-color-3: #e15759;
+  --btn-color-4: #76b7b2;
+  --btn-text-color: #ffffff;
+  --btn-border-radius: 12px;
+  --btn-font-size: 1.2rem;
 }
 
 html,
@@ -30,7 +37,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f8f9fa;
+  background-color: var(--team-primary);
   font-size: 1.5rem;
   text-align: center;
 }
@@ -62,7 +69,36 @@ body {
 .answers button {
   width: 100%;
   height: 100%;
-  font-size: 1.1rem;
+  font-size: var(--btn-font-size);
+  border-radius: var(--btn-border-radius);
+  color: var(--btn-text-color);
+  border: none;
+  transition:
+    transform 0.1s,
+    filter 0.2s;
+}
+
+#option-a {
+  background-color: var(--btn-color-1);
+}
+#option-b {
+  background-color: var(--btn-color-2);
+}
+#option-c {
+  background-color: var(--btn-color-3);
+}
+#option-d {
+  background-color: var(--btn-color-4);
+}
+
+.answers button:hover {
+  filter: brightness(1.1);
+  cursor: pointer;
+}
+
+.answers button:active {
+  transform: scale(0.98);
+  filter: brightness(0.95);
 }
 
 .get-ready {
@@ -91,7 +127,24 @@ body {
 }
 
 .team-ready-btn {
-  font-size: 1.2rem;
+  background-color: var(--btn-color-1);
+  color: var(--btn-text-color);
+  border-radius: var(--btn-border-radius);
+  font-size: var(--btn-font-size);
+  padding: 0.8rem 2rem;
+  transition:
+    filter 0.2s,
+    transform 0.1s;
+}
+
+.team-ready-btn:hover {
+  filter: brightness(1.1);
+  cursor: pointer;
+}
+
+.team-ready-btn:active {
+  transform: scale(0.98);
+  filter: brightness(0.95);
 }
 
 .check-answer {
@@ -120,5 +173,22 @@ body {
 }
 
 .pass-turn-btn {
-  font-size: 1.2rem;
+  background-color: var(--btn-color-1);
+  color: var(--btn-text-color);
+  border-radius: var(--btn-border-radius);
+  font-size: var(--btn-font-size);
+  padding: 0.8rem 2rem;
+  transition:
+    filter 0.2s,
+    transform 0.1s;
+}
+
+.pass-turn-btn:hover {
+  filter: brightness(1.1);
+  cursor: pointer;
+}
+
+.pass-turn-btn:active {
+  transform: scale(0.98);
+  filter: brightness(0.95);
 }
