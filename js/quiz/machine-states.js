@@ -1,5 +1,4 @@
 const States = {
-
   GET_READY: {
     enter(sm) {
       UI.showTeamTurn(sm.engine.currentTeam);
@@ -13,7 +12,7 @@ const States = {
 
       sm.engine.loadRandomQuestion();
       sm.set(States.QUIZ);
-    }
+    },
   },
 
   QUIZ: {
@@ -21,9 +20,7 @@ const States = {
       const engine = sm.engine;
       const q = engine.currentQuestion;
 
-      const category = engine.categories.find(
-        c => c.id === q.categoryId
-      );
+      const category = engine.categories.find((c) => c.id === q.categoryId);
 
       UI.showQuestion(q, category, engine.answers);
     },
@@ -33,17 +30,14 @@ const States = {
       sm.correct = correct;
 
       sm.set(States.CHECK_ANSWER);
-    }
+    },
   },
 
   CHECK_ANSWER: {
     enter(sm) {
       const engine = sm.engine;
 
-      UI.showAnswerResult(
-        sm.correct,
-        engine.currentQuestion.correctAnswer
-      );
+      UI.showAnswerResult(sm.correct, engine.currentQuestion.correctAnswer);
     },
 
     passTurn(sm) {
@@ -54,12 +48,12 @@ const States = {
       } else {
         sm.set(States.GET_READY);
       }
-    }
+    },
   },
 
   GAME_OVER: {
     enter(sm) {
       UI.redirectToResults(sm.engine.teams);
-    }
-  }
+    },
+  },
 };

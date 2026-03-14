@@ -4,7 +4,7 @@ function shuffle(array) {
 
 class GameEngine {
   constructor(teams, questionsData) {
-    this.teams = teams.map(name => ({ name, score: 0 }));
+    this.teams = teams.map((name) => ({ name, score: 0 }));
     this.currentTeamIndex = 0;
 
     this.questions = [...questionsData.questions];
@@ -22,8 +22,7 @@ class GameEngine {
   }
 
   nextTeam() {
-    this.currentTeamIndex =
-      (this.currentTeamIndex + 1) % this.teams.length;
+    this.currentTeamIndex = (this.currentTeamIndex + 1) % this.teams.length;
   }
 
   hasQuestions() {
@@ -36,7 +35,7 @@ class GameEngine {
 
     if (remainder !== 0) {
       console.warn(
-        `Recortando ${remainder} preguntas para que sean múltiplo de equipos`
+        `Recortando ${remainder} preguntas para que sean múltiplo de equipos`,
       );
       this.questions.splice(-remainder, remainder);
     }
