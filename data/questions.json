@@ -94,7 +94,7 @@
       "categoryId": "politica-filosofia",
       "question": "¿En qué año fue la legendaria fundación de la ciudad de Roma por Rómulo?",
       "correctAnswer": "753 a. C.",
-      "wrongAnswers": ["502 a. C.", "1053 a. C.", "No se sabe"]
+      "wrongAnswers": ["502 a. C.", "1053 a. C.", "732 a. c."]
     },
     {
       "categoryId": "politica-filosofia",
