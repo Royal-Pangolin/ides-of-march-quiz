@@ -82,16 +82,6 @@ article.active {
   overflow: hidden;
 }
 
-.question::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url("/images/pexels-chaitaastic-1797161.jpg") center/cover
-    no-repeat;
-  opacity: 0.08;
-  z-index: 0;
-}
-
 .question p {
   position: relative;
   z-index: 1;
