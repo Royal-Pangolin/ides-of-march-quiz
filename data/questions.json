@@ -1,65 +1,230 @@
 {
-  "categories": [{ "id": "test", "displayText": "Categoría de prueba" }],
+  "categories": [
+    { "id": "personajes-celebres", "displayText": "Personajes Célebres" },
+    { "id": "politica-filosofia", "displayText": "Política y Filosofía" },
+    { "id": "religion-mitologia", "displayText": "Religión y Mitología" },
+    { "id": "vida-mediterraneo", "displayText": "Vida en el Mediterráneo" }
+  ],
   "questions": [
     {
-      "categoryId": "test",
-      "question": "¿Cuál es el animal terrestre más rápido?",
-      "correctAnswer": "Guepardo",
-      "wrongAnswers": ["León", "Antílope", "Caballo"]
+      "categoryId": "personajes-celebres",
+      "question": "¿Cuál de los siguientes monumentos no es considerado una de las siete maravillas del mundo antiguo?",
+      "correctAnswer": "Coliseo Romano",
+      "wrongAnswers": [
+        "El Faro de Alejandría",
+        "La Gran Pirámide de Giza",
+        "El Coloso de Rodas"
+      ]
     },
     {
-      "categoryId": "test",
-      "question": "¿Qué continente tiene más países?",
-      "correctAnswer": "África",
-      "wrongAnswers": ["Asia", "Europa", "América"]
+      "categoryId": "personajes-celebres",
+      "question": "¿Qué emperador romano es famoso por haber ordenado la construcción de un gran muro en Britania?",
+      "correctAnswer": "Adriano",
+      "wrongAnswers": ["Trajano", "Augusto", "Tiberio"]
     },
     {
-      "categoryId": "test",
-      "question": "¿Quién fue el primer hombre en la Luna?",
-      "correctAnswer": "Neil Armstrong",
-      "wrongAnswers": ["Buzz Aldrin", "Yuri Gagarin", "Michael Collins"]
+      "categoryId": "personajes-celebres",
+      "question": "¿Qué faraón egipcio tuvo su tumba descubierta prácticamente intacta?",
+      "correctAnswer": "Tutankamón",
+      "wrongAnswers": ["Ramsés II", "Keops", "Amenhotep III"]
     },
     {
-      "categoryId": "test",
-      "question": "¿Cuál es la capital de Japón?",
-      "correctAnswer": "Tokio",
-      "wrongAnswers": ["Osaka", "Kioto", "Hiroshima"]
+      "categoryId": "personajes-celebres",
+      "question": "¿Qué historiador griego es conocido como el “Padre de la Historia”?",
+      "correctAnswer": "Heródoto",
+      "wrongAnswers": ["Tucídides", "Jenofonte", "Platón"]
     },
     {
-      "categoryId": "test",
-      "question": "¿Qué metal se usa para hacer monedas de 1 y 2 euros?",
-      "correctAnswer": "Níquel",
-      "wrongAnswers": ["Plomo", "Cobre", "Aluminio"]
+      "categoryId": "personajes-celebres",
+      "question": "¿Qué líder galo lideró una insurreción contra la conquista de romana de la galia por Julio César?",
+      "correctAnswer": "Vercingétorix",
+      "wrongAnswers": ["Panoramix", "Breno", "Portutatix"]
     },
     {
-      "categoryId": "test",
-      "question": "¿Cuál es la montaña más alta del mundo?",
-      "correctAnswer": "Monte Everest",
-      "wrongAnswers": ["K2", "Kangchenjunga", "Lhotse"]
+      "categoryId": "personajes-celebres",
+      "question": "¿Qué matemático y astrónomo alejandrino calculó con precisión la circunferencia de la Tierra?",
+      "correctAnswer": "Erastótenes",
+      "wrongAnswers": ["Euclides", "Arquímedes", "Ptolomeo"]
     },
     {
-      "categoryId": "test",
-      "question": "¿Qué órgano del cuerpo produce insulina?",
-      "correctAnswer": "Páncreas",
-      "wrongAnswers": ["Hígado", "Riñón", "Corazón"]
+      "categoryId": "personajes-celebres",
+      "question": "¿Qué reina de Egipto murió envenenada?",
+      "correctAnswer": "Cleopatra",
+      "wrongAnswers": ["Nefertiti", "Arsinoe", "Hatshepsut"]
     },
     {
-      "categoryId": "test",
-      "question": "¿Cuál es la moneda oficial de Estados Unidos?",
-      "correctAnswer": "Dólar",
-      "wrongAnswers": ["Euro", "Libra", "Yen"]
+      "categoryId": "personajes-celebres",
+      "question": "¿Quién fue el general cartaginés que cruzó los Alpes con elefantes durante la Segunda Guerra Púnica?",
+      "correctAnswer": "Aníbal Barca",
+      "wrongAnswers": ["Asdrúbal el Beotarca", "Filipo IV", "Viriato"]
     },
     {
-      "categoryId": "test",
-      "question": "¿Qué planeta es conocido como el planeta rojo?",
-      "correctAnswer": "Marte",
-      "wrongAnswers": ["Júpiter", "Venus", "Saturno"]
+      "categoryId": "personajes-celebres",
+      "question": "¿Quién fue el rey macedonio que conquistó gran parte del Mediterráneo oriental y de Asia?",
+      "correctAnswer": "Alejandro Magno",
+      "wrongAnswers": ["Filipo II", "Péricles", "Darío I"]
     },
     {
-      "categoryId": "test",
-      "question": "¿En qué país se encuentran las pirámides de Giza?",
-      "correctAnswer": "Egipto",
-      "wrongAnswers": ["México", "Sudán", "Perú"]
+      "categoryId": "politica-filosofia",
+      "question": "¿A qué shah persa derrotó Alejandro Magno en la batalla de Gaugamela?",
+      "correctAnswer": "Darío III",
+      "wrongAnswers": ["Aníbal Barca", "Agamenón", "Seleuco I"]
+    },
+    {
+      "categoryId": "politica-filosofia",
+      "question": "¿Cómo se denominaban las dos principales facciones políticas del senado romano?",
+      "correctAnswer": "Populares y Optimates",
+      "wrongAnswers": [
+        "Patricios y Plebeyos",
+        "Republicanos e Imperiales",
+        "Tribunos y Ediles"
+      ]
+    },
+    {
+      "categoryId": "politica-filosofia",
+      "question": "¿En qué año fue la legendaria fundación de la ciudad de Roma por Rómulo?",
+      "correctAnswer": "753 a. C.",
+      "wrongAnswers": ["502 a. C.", "1053 a. C.", "No se sabe"]
+    },
+    {
+      "categoryId": "politica-filosofia",
+      "question": "¿En qué año se considera que comenzó oficialmente el Imperio Romano?",
+      "correctAnswer": "27 a. C.",
+      "wrongAnswers": ["217 a. C.", "1 d. C.", "44 a. C."]
+    },
+    {
+      "categoryId": "politica-filosofia",
+      "question": "¿Qué ciudad-estado griega destacó por su sistema militar y su sociedad oligárquica?",
+      "correctAnswer": "Esparta",
+      "wrongAnswers": ["Pérgamo", "Éfeso", "Rodas"]
+    },
+    {
+      "categoryId": "politica-filosofia",
+      "question": "¿Qué famoso filósofo griego escribió “La República” sobre la justicia y la organización del Estado?",
+      "correctAnswer": "Platón",
+      "wrongAnswers": ["Demócrito", "Cicerón", "Pitágoras"]
+    },
+    {
+      "categoryId": "politica-filosofia",
+      "question": "¿Qué famoso filósofo griego fue maestro de Alejandro Magno?",
+      "correctAnswer": "Aristóteles",
+      "wrongAnswers": ["Protágoras", "Diógenes", "Anaximandro"]
+    },
+    {
+      "categoryId": "politica-filosofia",
+      "question": "¿Quién fue el primer emperador de Roma?",
+      "correctAnswer": "Augusto",
+      "wrongAnswers": ["César", "Tiberio", "Constantino"]
+    },
+    {
+      "categoryId": "religion-mitologia",
+      "question": "¿Cuál era la función del Oráculo de Delfos en la antigua Grecia?",
+      "correctAnswer": "Predecir el futuro",
+      "wrongAnswers": [
+        "Administrar justicia",
+        "Organizar guerras",
+        "Recoger impuestos"
+      ]
+    },
+    {
+      "categoryId": "religion-mitologia",
+      "question": "¿Qué dios griego del mar era conocido por su tridente?",
+      "correctAnswer": "Poseidón",
+      "wrongAnswers": ["Zeus", "Neptuno", "Apolo"]
+    },
+    {
+      "categoryId": "religion-mitologia",
+      "question": "¿Qué festival romano se celebraba en honor a un dios en el solsticio de invierno?",
+      "correctAnswer": "Saturnales",
+      "wrongAnswers": ["Lupercales", "Floralia", "Consualia"]
+    },
+    {
+      "categoryId": "religion-mitologia",
+      "question": "¿Qué héroe griego realizó doce trabajos como penitencia?",
+      "correctAnswer": "Heracles",
+      "wrongAnswers": ["Perseo", "Teseo", "Aquiles"]
+    },
+    {
+      "categoryId": "religion-mitologia",
+      "question": "¿Qué mitológico rey de Creta fue encerrado en un laberinto con un Minotauro?",
+      "correctAnswer": "Minos",
+      "wrongAnswers": ["Agamenón", "Midas", "Priam"]
+    },
+    {
+      "categoryId": "religion-mitologia",
+      "question": "¿Qué titán griego le arrebató el fuego a los dioses del Olimpo para entregárselo a los humanos?",
+      "correctAnswer": "Prometeo",
+      "wrongAnswers": ["Epimeteo", "Rea", "Atlas"]
+    },
+    {
+      "categoryId": "religion-mitologia",
+      "question": "¿Quién era el dios egipcio de la muerte y el más allá?",
+      "correctAnswer": "Osiris",
+      "wrongAnswers": ["Isis", "Ra", "Anubis"]
+    },
+    {
+      "categoryId": "religion-mitologia",
+      "question": "¿Quién era el dios romano señor del inframundo?",
+      "correctAnswer": "Plutón",
+      "wrongAnswers": ["Hera", "Hades", "Juno"]
+    },
+    {
+      "categoryId": "vida-mediterraneo",
+      "question": "Cuántas guerras hubo entre Roma y Cartago hasta la destrucción de esta última?",
+      "correctAnswer": "3",
+      "wrongAnswers": ["1", "2", "4"]
+    },
+    {
+      "categoryId": "vida-mediterraneo",
+      "question": "¿Cómo se llamaba el pueblo preindoeuropeo más relevante de la peninsula itálica?",
+      "correctAnswer": "Etruscos",
+      "wrongAnswers": ["Vénetos", "Lucanos", "Sabinos"]
+    },
+    {
+      "categoryId": "vida-mediterraneo",
+      "question": "¿Cómo se llamaba el caballo de Alejandro Magno?",
+      "correctAnswer": "Bucéfalo",
+      "wrongAnswers": ["Pegaso", "Hippeus", "Xanthos"]
+    },
+    {
+      "categoryId": "vida-mediterraneo",
+      "question": "¿Cuál de las siguientes ciudades no es considerada una polis griega?",
+      "correctAnswer": "Cnosos",
+      "wrongAnswers": ["Tebas", "Siracusa", "Corinto"]
+    },
+    {
+      "categoryId": "vida-mediterraneo",
+      "question": "¿Cuál era el color del tinte más caro de la antigüedad, que solía ser usado por personas adineradas?",
+      "correctAnswer": "Púrpura de Tiro",
+      "wrongAnswers": ["Azul ultramarino", "Ocre amarillo", "Verde malaquita"]
+    },
+    {
+      "categoryId": "vida-mediterraneo",
+      "question": "¿Cuál es de los siguientes monumentos que hay en la ciudad de Roma es el más antiguo?",
+      "correctAnswer": "Obelisco Flaminio",
+      "wrongAnswers": ["El Foro Romano", "La Muralla Serviana", "El Panteón"]
+    },
+    {
+      "categoryId": "vida-mediterraneo",
+      "question": "¿Cuál es el nombre original del Coliseo Romano?",
+      "correctAnswer": "Anfiteatro Flavio",
+      "wrongAnswers": [
+        "El circo de Vespasiano",
+        "Anfiteatro Constantino",
+        "El Circo de César"
+      ]
+    },
+    {
+      "categoryId": "vida-mediterraneo",
+      "question": "¿En qué siglo se edificó el Coliseo Romano?",
+      "correctAnswer": "I d. C.",
+      "wrongAnswers": ["II a. C.", "I a. C.", "III d. C."]
+    },
+    {
+      "categoryId": "vida-mediterraneo",
+      "question": "¿Qué representaban los escarabeos azules en el Antiguo Egipto?",
+      "correctAnswer": "Renacimiento y protección",
+      "wrongAnswers": ["Riqueza", "Buena fortuna", "Amor"]
     }
   ]
 }
