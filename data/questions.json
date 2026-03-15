@@ -138,9 +138,9 @@
     },
     {
       "categoryId": "religion-mitologia",
-      "question": "¿Qué dios griego del mar era conocido por su tridente?",
-      "correctAnswer": "Poseidón",
-      "wrongAnswers": ["Zeus", "Neptuno", "Apolo"]
+      "question": "¿Qué dios romano del mar era conocido por su tridente?",
+      "correctAnswer": "Neptuno",
+      "wrongAnswers": ["Zeus", "Poseidón", "Júpiter"]
     },
     {
       "categoryId": "religion-mitologia",
@@ -229,7 +229,7 @@
       "question": "¿Cuál es el nombre original del Coliseo Romano?",
       "correctAnswer": "Anfiteatro Flavio",
       "wrongAnswers": [
-        "El circo de Vespasiano",
+        "El Circo de Vespasiano",
         "Anfiteatro Constantino",
         "El Circo de César"
       ]
