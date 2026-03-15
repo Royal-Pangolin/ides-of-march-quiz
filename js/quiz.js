@@ -19,8 +19,6 @@ async function initGame() {
 
   const engine = new GameEngine(teamsData.teamNames, questionsData);
 
-  console.log("Preguntas en el motor:", engine.questions.length);
-
   const sm = new StateMachine(engine);
 
   new GameController(engine, sm);
