@@ -118,7 +118,7 @@
       "categoryId": "politica-filosofia",
       "question": "¿Qué famoso filósofo griego fue maestro de Alejandro Magno?",
       "correctAnswer": "Aristóteles",
-      "wrongAnswers": ["Protágoras", "Diógenes", "Anaximandro"]
+      "wrongAnswers": ["Protágoras", "Platón", "Anaximandro"]
     },
     {
       "categoryId": "politica-filosofia",
@@ -233,9 +233,9 @@
       "question": "¿Cuál es el nombre original del Coliseo Romano?",
       "correctAnswer": "Anfiteatro Flavio",
       "wrongAnswers": [
-        "El Circo de Vespasiano",
+        "Circo de Vespasiano",
         "Anfiteatro Constantino",
-        "El Circo de César"
+        "Circo de César"
       ]
     },
     {
