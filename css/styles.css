@@ -15,13 +15,17 @@
   --text-color: #333333;
 }
 
+.all-caps {
+  font-family: "Marcellus SC", "Segoe UI", Roboto, sans-serif;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
   width: 100vw;
   height: 100vh;
-  font-family: "Segoe UI", Roboto, sans-serif;
+  font-family: "Marcellus", "Segoe UI", Roboto, sans-serif;
   background-color: var(--background-color);
   box-sizing: border-box;
 }
@@ -59,7 +63,7 @@ article.active {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f8f9fa;
+  background-color: var(--background-color);
   font-size: 1.5rem;
   text-align: center;
 }
@@ -240,7 +244,7 @@ article.active {
 }
 
 .check-answer p {
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 .check-answer .correct-answer {
   font-weight: 700;
