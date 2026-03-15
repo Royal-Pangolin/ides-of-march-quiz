@@ -150,9 +150,9 @@
     },
     {
       "categoryId": "religion-mitologia",
-      "question": "¿Qué festival romano se celebraba en honor a un dios en el solsticio de invierno?",
-      "correctAnswer": "Saturnales",
-      "wrongAnswers": ["Lupercales", "Floralia", "Consualia"]
+      "question": "¿Qué personaje de la mitología grecorromana, héroe de la guerra de Trota se convirtió en el projenitos del pueblo romano?",
+      "correctAnswer": "Eneas",
+      "wrongAnswers": ["Odiseo", "Menelao", "Aquiles"]
     },
     {
       "categoryId": "religion-mitologia",
@@ -196,9 +196,9 @@
     },
     {
       "categoryId": "vida-mediterraneo",
-      "question": "¿Cómo se llamaba el pueblo preindoeuropeo más relevante de la peninsula itálica?",
-      "correctAnswer": "Etruscos",
-      "wrongAnswers": ["Vénetos", "Lucanos", "Sabinos"]
+      "question": "¿Cómo llamaban los romanos al mar Mediterráneo?",
+      "correctAnswer": "Mare Nostrum",
+      "wrongAnswers": ["Mare Magnum", "Mare Romanum", "Mare Aureum"]
     },
     {
       "categoryId": "vida-mediterraneo",
@@ -208,21 +208,25 @@
     },
     {
       "categoryId": "vida-mediterraneo",
-      "question": "¿Cuál de las siguientes ciudades no es considerada una polis griega?",
-      "correctAnswer": "Cnosos",
+      "question": "¿Cuál de las siguientes ciudades no es una polis griega?",
+      "correctAnswer": "Pela",
       "wrongAnswers": ["Tebas", "Siracusa", "Odesa"]
     },
     {
       "categoryId": "vida-mediterraneo",
-      "question": "¿Cuál era el color del tinte más caro de la antigüedad, que solía ser usado por personas adineradas?",
+      "question": "¿Cuál era el color del tinte más caro, que solía ser usado por personas adineradas, de la antigüedad?",
       "correctAnswer": "Púrpura de Tiro",
       "wrongAnswers": ["Azul ultramarino", "Ocre amarillo", "Verde malaquita"]
     },
     {
       "categoryId": "vida-mediterraneo",
-      "question": "¿Cuál es de los siguientes monumentos que hay en la ciudad de Roma es el más antiguo?",
-      "correctAnswer": "Obelisco Flaminio",
-      "wrongAnswers": ["El Foro Romano", "La Muralla Serviana", "El Panteón"]
+      "question": "¿Cuál de los siguientes monumentos es el más antiguo?",
+      "correctAnswer": "Templo de Abu Simbel",
+      "wrongAnswers": [
+        "Templo de Júpiter Capitolino",
+        "Templo de Zeus Olímpico",
+        "Faro de Alejandría"
+      ]
     },
     {
       "categoryId": "vida-mediterraneo",
