@@ -18,12 +18,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   teams.forEach((team, index) => {
     const card = document.createElement("div");
-    card.className = "result-card";
+    card.className = "result-card row container-fluid m-2";
 
     card.innerHTML = `
-      <span class="position">#${index + 1}</span>
-      <span class="team">${team.name}</span>
-      <span class="score">${team.score}</span>
+      <span class="position col-2 m-2">#${index + 1}</span>
+      <span class="team col-8 m-2">${team.name}</span>
+      <span class="score col-2 m-2">${team.score}</span>
     `;
 
     resultsContainer.appendChild(card);

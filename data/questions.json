@@ -186,9 +186,13 @@
     },
     {
       "categoryId": "vida-mediterraneo",
-      "question": "Cuántas guerras hubo entre Roma y Cartago hasta la destrucción de esta última?",
-      "correctAnswer": "3",
-      "wrongAnswers": ["1", "2", "4"]
+      "question": "¿Cuántas guerras hubo entre Roma y Cartago hasta la destrucción de Cartago?",
+      "correctAnswer": "Tres Guerras Púnicas",
+      "wrongAnswers": [
+        "Cinco Guerras Púnicas",
+        "Dos Guerras Púnicas",
+        "Siete Guerras Púnicas"
+      ]
     },
     {
       "categoryId": "vida-mediterraneo",
@@ -206,7 +210,7 @@
       "categoryId": "vida-mediterraneo",
       "question": "¿Cuál de las siguientes ciudades no es considerada una polis griega?",
       "correctAnswer": "Cnosos",
-      "wrongAnswers": ["Tebas", "Siracusa", "Corinto"]
+      "wrongAnswers": ["Tebas", "Siracusa", "Odesa"]
     },
     {
       "categoryId": "vida-mediterraneo",
@@ -238,7 +242,7 @@
     },
     {
       "categoryId": "vida-mediterraneo",
-      "question": "¿Qué representaban los escarabeos azules en el Antiguo Egipto?",
+      "question": "¿Qué representaban los escarabajos azules en el Antiguo Egipto?",
       "correctAnswer": "Renacimiento y protección",
       "wrongAnswers": ["Riqueza", "Buena fortuna", "Amor"]
     }
