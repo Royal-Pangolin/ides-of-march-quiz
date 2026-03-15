@@ -82,6 +82,16 @@
     },
     {
       "categoryId": "politica-filosofia",
+      "question": "¿Cuál de los siguientes dilemas filosóficos plantea la cuestión de si un objeto sigue siendo el mismo después de que todas sus partes hayan sido reemplazadas?",
+      "correctAnswer": "El barco de Teseo",
+      "wrongAnswers": [
+        "La caverna de Platón",
+        "El mito de Sísifo",
+        "La paradoja de Aquiles y la tortuga"
+      ]
+    },
+    {
+      "categoryId": "politica-filosofia",
       "question": "¿En qué año fue la legendaria fundación de la ciudad de Roma por Rómulo?",
       "correctAnswer": "753 a. C.",
       "wrongAnswers": ["502 a. C.", "1053 a. C.", "No se sabe"]
@@ -131,6 +141,12 @@
       "question": "¿Qué dios griego del mar era conocido por su tridente?",
       "correctAnswer": "Poseidón",
       "wrongAnswers": ["Zeus", "Neptuno", "Apolo"]
+    },
+    {
+      "categoryId": "religion-mitologia",
+      "question": "¿Cuál es el dios griego equivalente de Mercurio?",
+      "correctAnswer": "Hermes",
+      "wrongAnswers": ["Hades", "Ares", "Deméter"]
     },
     {
       "categoryId": "religion-mitologia",
