@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Idus de Marzo · Cuestionario</title>
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marcellus&family=Marcellus+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header class="d-none">
+      <h1>Cuestionario de los Idus de Marzo</h1>
+    </header>
+
+    <article id="get-ready" class="get-ready">
+      <section>
+        <p id="team-turn-text" class="team-turn-text">Turno del equipo</p>
+
+        <p id="team-name" class="team-name">Nombre del equipo</p>
+
+        <button id="team-ready-btn" class="btn btn-primary team-ready-btn">
+          ¡Preparados!
+        </button>
+      </section>
+    </article>
+
+    <article id="quiz" class="quiz">
+      <section class="category all-caps">
+        <p id="category" class="m-1">Categoría</p>
+      </section>
+
+      <section class="question">
+        <p id="question" class="col-8">¿Aquí va una pregunta?</p>
+      </section>
+
+      <section id="answers" class="answers">
+        <button id="option-a" class="btn btn-primary col-10">Opción A</button>
+
+        <button id="option-b" class="btn btn-secondary col-10">Opción B</button>
+
+        <button id="option-c" class="btn btn-success col-10">Opción C</button>
+
+        <button id="option-d" class="btn btn-danger col-10">Opción D</button>
+      </section>
+    </article>
+
+    <article id="check-answer" class="check-answer">
+      <section>
+        <p id="answer-correctness" class="answer-correctness all-caps">
+          <span>Incorrecto</span>
+        </p>
+
+        <p>
+          La respuesta correcta es:
+          <span id="correct-answer" class="correct-answer"> respuesta </span>
+        </p>
+
+        <button id="pass-turn-btn" class="btn btn-primary pass-turn-btn">
+          Pasa el Turno
+        </button>
+      </section>
+    </article>
+
+    <script src="/js/bootstrap.min.js"></script>
+
+    <script src="/js/game-engine.js"></script>
+    <script src="/js/ui.js"></script>
+    <script src="/js/state-machine.js"></script>
+    <script src="/js/machine-states.js"></script>
+    <script src="/js/game-controller.js"></script>
+    <script src="/js/quiz.js"></script>
+  </body>
+</html>

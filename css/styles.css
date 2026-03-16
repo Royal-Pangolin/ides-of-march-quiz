@@ -1,6 +1,22 @@
 :root {
-  --team-primary: #f8f9fa;
-  --team-secondary: #c9c9c9;
+  --btn-gradient-1: linear-gradient(135deg, #4e79a7, #6fa1d4);
+  --btn-gradient-2: linear-gradient(135deg, #f28e2b, #f5b75c);
+  --btn-gradient-3: linear-gradient(135deg, #e15759, #f28c8e);
+  --btn-gradient-4: linear-gradient(135deg, #76b7b2, #98d8d3);
+  --btn-text-color: #ffffff;
+  --btn-border-radius: 16px;
+  --btn-font-size: 1.3rem;
+  --btn-aswers-font-size: 2.2rem;
+  --card-bg: rgba(255, 255, 255, 0.95);
+  --card-radius: 20px;
+  --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  --team-color: #4e79a7;
+  --background-color: #f0f2f5;
+  --text-color: #333333;
+}
+
+.all-caps {
+  font-family: "Marcellus SC", "Segoe UI", Roboto, sans-serif;
 }
 
 html,
@@ -9,29 +25,50 @@ body {
   padding: 0;
   width: 100vw;
   height: 100vh;
+  font-family: "Marcellus", "Segoe UI", Roboto, sans-serif;
+  background-color: var(--background-color);
   box-sizing: border-box;
 }
 
-#quiz {
+article {
+  opacity: 0;
+  transform: scale(0.95);
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease;
+  display: none;
+  pointer-events: none;
+}
+
+article.active {
+  display: flex;
+  opacity: 1;
+  transform: scale(1);
+  justify-content: center;
+  align-items: center;
+  pointer-events: auto;
+}
+
+.quiz {
   display: flex;
   flex-direction: column;
   width: 100vw;
   height: 100vh;
 }
 
-#category {
+.category {
   width: 100vw;
   min-height: 10vh;
   max-height: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f8f9fa;
+  background-color: var(--background-color);
   font-size: 1.5rem;
   text-align: center;
 }
 
-#question {
+.question {
   width: 100vw;
   min-height: 50vh;
   max-height: 50vh;
@@ -39,82 +76,237 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #e9ecef;
-  font-size: 1.25rem;
+  font-size: 2.6rem;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
-#answers {
+.question p {
+  position: relative;
+  z-index: 1;
+}
+
+.answers {
   width: 100vw;
   min-height: 40vh;
   max-height: 40vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 10px;
-  padding: 10px;
+  gap: 15px;
+  padding: 15px;
   box-sizing: border-box;
 }
 
-#answers button {
+.answers button {
   width: 100%;
   height: 100%;
-  font-size: 1.1rem;
+  font-size: var(--btn-aswers-font-size);
+  border-radius: var(--btn-border-radius);
+  color: var(--btn-text-color);
+  border: none;
+  transition:
+    transform 0.1s,
+    filter 0.2s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
-#get-ready {
+#option-a {
+  background: var(--btn-gradient-1);
+}
+#option-b {
+  background: var(--btn-gradient-2);
+}
+#option-c {
+  background: var(--btn-gradient-3);
+}
+#option-d {
+  background: var(--btn-gradient-4);
+}
+
+.answers button:hover {
+  filter: brightness(1.1);
+}
+.answers button:active {
+  transform: scale(0.97);
+  filter: brightness(0.95);
+}
+
+.get-ready,
+.check-answer {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
-  z-index: 9999;
-  background-color: #ffffff;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  align-items: center;
+  z-index: 999;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-#team-turn-text {
-  font-size: 1.5rem;
+.get-ready {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)),
+    url("/images/pexels-chaitaastic-1797161.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-#team-name {
-  font-size: 2rem;
-  font-weight: bold;
+.get-ready > section,
+.check-answer > section {
+  background-color: var(--card-bg);
+  padding: 30px 40px;
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  animation: fadeIn 0.5s ease forwards;
 }
 
-#team-ready-btn {
-  font-size: 1.2rem;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
-#check-answer {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
+.team-turn-text {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.team-name {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--team-color);
+}
+
+.team-ready-btn,
+.pass-turn-btn {
+  background: var(--btn-gradient-1);
+  color: var(--btn-text-color);
+  border-radius: var(--btn-border-radius);
+  font-size: var(--btn-font-size);
+  padding: 0.8rem 2rem;
+  width: 70%;
+  transition:
+    transform 0.1s,
+    filter 0.2s;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.team-ready-btn:hover,
+.pass-turn-btn:hover {
+  filter: brightness(1.1);
+}
+.team-ready-btn:active,
+.pass-turn-btn:active {
+  transform: scale(0.97);
+  filter: brightness(0.95);
+}
+
+.check-answer .answer-correctness {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.answer-correct {
+  color: #28a745;
+}
+.answer-wrong {
+  color: #dc3545;
+}
+
+.check-answer p {
+  font-size: 1rem;
+}
+.check-answer .correct-answer {
+  font-weight: 700;
+  color: inherit;
+}
+
+.results-container {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 9998;
-  background-color: #ffffff;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  gap: 30px;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)),
+    url("/images/andrew-mol-rBInsYgAEMw-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-#answer-correctness {
+#results {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 800px;
+}
+
+.result-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 30px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
   font-size: 1.5rem;
 }
 
-#correct-answer {
-  font-size: 2rem;
-  font-weight: bold;
+.result-card span {
+  display: inline-block;
 }
 
-#pass-turn-btn {
-  font-size: 1.2rem;
+.position {
+  font-weight: bold;
+  width: 40px;
+  text-align: center;
+}
+
+.team {
+  flex: 1;
+  text-align: left;
+  min-width: 500px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: 600;
+}
+
+.score {
+  font-weight: bold;
+  text-align: right;
+  width: 60px;
+}
+
+#restart-btn {
+  font-size: 1.4rem;
+  padding: 10px 30px;
+  border-radius: 12px;
+  border: none;
+  background: var(--btn-gradient-1);
+  color: white;
+  cursor: pointer;
 }
